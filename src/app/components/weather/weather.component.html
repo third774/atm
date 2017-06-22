@@ -1,0 +1,9 @@
+<div *ngIf="weather$ | async; else loading; let weather;">
+  <p>It's {{weather.main.temp}}°F in Austin, TX</p>
+</div>
+<ng-template #loading>
+  <p>
+    Loading Weather...
+  </p>
+</ng-template>
+<app-button-labels left4="Go Back"></app-button-labels>

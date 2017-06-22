@@ -1,0 +1,65 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 70px 0;
+}
+
+.star, .pulse, .maestro, .mastercard, .plus, .visa {
+  background-image: url('/assets/images/creditcard_sprite.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.star {
+  background-position: 0 -23px;
+  width: 30px;
+  height: 20px;
+  &.active {
+    background-position: 0 0;
+  }
+}
+
+.pulse {
+  width: 42px;
+  height: 18px;
+  background-position: -39px -26px;
+  &.active {
+    background-position: -39px -3px;
+  }
+}
+
+.maestro {
+  width: 28px;
+  height: 18px;
+  background-position: -93px -25px;
+  &.active {
+    background-position: -93px -2px;
+  }
+}
+
+.mastercard {
+  width: 28px;
+  height: 18px;
+  background-position: -132px -26px;
+  &.active {
+    background-position: -132px -3px;
+  }
+}
+
+.plus {
+  width: 28px;
+  height: 18px;
+  background-position: -171px -26px;
+  &.active {
+    background-position: -171px -3px;
+  }
+}
+
+.visa {
+  width: 25px;
+  height: 18px;
+  background-position: -212px -26px;
+  &.active {
+    background-position: -212px -3px;
+  }
+}

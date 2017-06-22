@@ -1,0 +1,57 @@
+@import 'variables';
+
+:host {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  font-size: 0.8rem;
+}
+
+span.left {
+  left: 5%;
+  &:after {
+    content: ' ';
+    width: 13px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+  }
+}
+
+span.right {
+  right: 5%;
+  &:after {
+    content: ' ';
+    width: 13px;
+    height: 2px;
+    background-color: $white;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+  }
+}
+
+span.position-1 {
+  top: 32%;
+}
+
+span.position-2 {
+  top: 47%;
+}
+
+span.position-3 {
+  top: 62%;
+}
+
+span.position-4 {
+  top: 77%;
+}

@@ -1,0 +1,30 @@
+@import 'variables';
+
+:host {
+  display: block;
+  text-align: center;
+  background-color: $sign-background-color;
+  color: $white;
+  border-radius: 0.5rem;
+  position: relative;
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    height: 63px;
+    width: 207px;
+    background-image: url('/assets/images/graffiti.png');
+  }
+}
+
+h1 {
+  font-size: 7rem;
+  margin: 1rem 0 0 0;
+  line-height: 0.8;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+}

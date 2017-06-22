@@ -1,0 +1,110 @@
+@import 'variables';
+
+:host {
+  display: block;
+  background-color: $screen-color;
+  border: 4px solid $screen-border;
+  margin: 1rem 4rem;
+  color: $white;
+  font-family: Arial;
+  width: 16rem;
+  height: 12rem;
+  position: relative;
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 93%;
+    left: -18%;
+    height: 112px;
+    width: 158px;
+    background-image: url('/assets/images/sticker_graf.png');
+  }
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 105%;
+    right: 0;
+    height: 6px;
+    width: 110px;
+    background-image: url('/assets/images/spanning_systems.png');
+  }
+}
+
+button {
+  background-color: $button-color;
+  width: 30px;
+  height: 20px;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 0 2px 0 $button-shadow;
+  cursor: pointer;
+  outline: none;
+  &:active {
+    box-shadow: 0 0 0 $button-shadow;
+    transform: translateY(2px);
+    transition: box-shadow .2s, transform .2s;
+  }
+  &:active {
+    &:after {
+      transition: box-shadow .2s, transform .2s;
+      transform: translateY(-2px);
+    }
+    transition: box-shadow .2s, transform .2s;
+  }
+  &:after {
+    transition: transform .2s;
+  }
+  transition: box-shadow .2s, transform .2s;
+}
+
+button.left {
+  position: absolute;
+  left: -17%;
+  &:after {
+    content: ' ';
+    height: 2px;
+    width: 9px;
+    position: absolute;
+    left: 100%;
+    top: 60%;
+    background-color: $button-line-inlay;
+  }
+}
+
+button.right {
+  position: absolute;
+  right: -17%;
+  &:after {
+    content: ' ';
+    height: 2px;
+    width: 9px;
+    position: absolute;
+    right: 100%;
+    top: 60%;
+    background-color: $button-line-inlay;
+  }
+}
+
+button.position-1 {
+  top: 30%;
+}
+
+button.position-2 {
+  top: 45%;
+}
+
+button.position-3 {
+  top: 60%;
+}
+
+button.position-4 {
+  top: 75%;
+}
+
+app-button-labels {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}

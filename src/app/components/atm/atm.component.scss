@@ -1,0 +1,16 @@
+@import 'variables';
+
+:host {
+  display: block;
+  height: 400px;
+  background-color: $atm-background-color;
+  position: relative;
+  border-top: .5rem solid $sign-shadow-color;
+}
+
+app-atm-sign {
+  position: absolute;
+  width: 110%;
+  left: -5%;
+  bottom: 102%;
+}
