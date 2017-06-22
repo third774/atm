@@ -16,7 +16,7 @@ import {Router} from '@angular/router';
 export class WeatherComponent implements OnInit, OnDestroy {
 
   weather$: Observable<string>;
-  readonly url = 'http://api.openweathermap.org/';
+  readonly url = '//api.openweathermap.org/';
   readonly location = 'Austin,TX';
   readonly apiKey = '50cfb1fefe90e7ced682fb1a2407ba1b';
 
